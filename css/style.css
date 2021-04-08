@@ -1,0 +1,101 @@
+body {
+    background: radial-gradient(rgb(117, 117, 117), black);
+}
+
+img {
+    width: 50px;
+    z-index: -1;
+}
+
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes over {
+    from {transform: scale(1.0);}
+    to {transform: scale(1.5);}
+}
+
+span {
+    font-size: 8pt;
+    position: absolute;
+    background: white;
+    z-index: 2;
+    margin-top: -5px;
+    margin-left: -50px;
+    padding: 5px;
+    visibility: hidden;
+    border: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+#room {
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#alert {
+    visibility: hidden;
+    background: white;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    z-index: 2;
+    position: relative;
+    top: -300px;
+}
+
+#display {
+    font-size: 40px;
+    margin: auto;
+}
+
+button {
+    box-shadow: 3px 3px 3px black;
+}
+
+#legend {
+    position: fixed;
+    top: 450px;
+    margin-top: 50px;
+    text-align: center;
+    width: 20px;
+    color:gray
+}
+
+#buttons {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#getout {
+    z-index: 0;
+    visibility: hidden;
+    margin-top: -20px;
+}
+
+#view {
+    visibility: hidden;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 50%;
+    position: fixed;
+    top: 500px;
+}
+
+#your {
+    font-size: 40px;
+    margin: auto;
+}
+
+.filas {
+    font: normal 20pt Arial;
+    color: gray;
+}

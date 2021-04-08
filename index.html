@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="script/script.js"></script>
+    <title>Mandango - Tickets for Cinema</title>
+</head>
+<body onload="createRoom()">
+
+    <h1 style="color: gray; font: normal 30px Arial;text-align: center;">Movie Theater - Tickets for Cinema</h1>
+
+    <div id="room" style="margin-top: 60px; text-align: center;">
+        <div class="filas">
+            0
+            <img src="" alt="" id="seat01" onclick="clickStatusSeat(0, 1)" onmouseover="seeStatus(0, 1)" onmouseout="eraseStatus(0, 1)"><span id="popup01"></span>
+            <img src="" alt="" id="seat02" onclick="clickStatusSeat(0, 2)" onmouseover="seeStatus(0, 2)" onmouseout="eraseStatus(0, 2)"><span id="popup02"></span>
+            <img src="" alt="" id="seat03" onclick="clickStatusSeat(0, 3)" onmouseover="seeStatus(0, 3)" onmouseout="eraseStatus(0, 3)"><span id="popup03"></span>
+            <img src="" alt="" id="seat04" onclick="clickStatusSeat(0, 4)" onmouseover="seeStatus(0, 4)" onmouseout="eraseStatus(0, 4)"><span id="popup04"></span>
+            <img src="" alt="" id="seat05" onclick="clickStatusSeat(0, 5)" onmouseover="seeStatus(0, 5)" onmouseout="eraseStatus(0, 5)"><span id="popup05"></span>
+            <img src="" alt="" id="seat06" onclick="clickStatusSeat(0, 6)" onmouseover="seeStatus(0, 6)" onmouseout="eraseStatus(0, 6)"><span id="popup06"></span>
+            <img src="" alt="" id="seat07" onclick="clickStatusSeat(0, 7)" onmouseover="seeStatus(0, 7)" onmouseout="eraseStatus(0, 7)"><span id="popup07"></span>
+            <img src="" alt="" id="seat08" onclick="clickStatusSeat(0, 8)" onmouseover="seeStatus(0, 8)" onmouseout="eraseStatus(0, 8)"><span id="popup08"></span>
+            <img src="" alt="" id="seat09" onclick="clickStatusSeat(0, 9)" onmouseover="seeStatus(0, 9)" onmouseout="eraseStatus(0, 9)"><span id="popup09"></span>
+        </div>
+        <div class="filas">
+            1
+            <img src="" alt="" id="seat11" onclick="clickStatusSeat(1, 1)" onmouseover="seeStatus(1, 1)" onmouseout="eraseStatus(1, 1)"><span id="popup11"></span>
+            <img src="" alt="" id="seat12" onclick="clickStatusSeat(1, 2)" onmouseover="seeStatus(1, 2)" onmouseout="eraseStatus(1, 2)"><span id="popup12"></span>
+            <img src="" alt="" id="seat13" onclick="clickStatusSeat(1, 3)" onmouseover="seeStatus(1, 3)" onmouseout="eraseStatus(1, 3)"><span id="popup13"></span>
+            <img src="" alt="" id="seat14" onclick="clickStatusSeat(1, 4)" onmouseover="seeStatus(1, 4)" onmouseout="eraseStatus(1, 4)"><span id="popup14"></span>
+            <img src="" alt="" id="seat15" onclick="clickStatusSeat(1, 5)" onmouseover="seeStatus(1, 5)" onmouseout="eraseStatus(1, 5)"><span id="popup15"></span>
+            <img src="" alt="" id="seat16" onclick="clickStatusSeat(1, 6)" onmouseover="seeStatus(1, 6)" onmouseout="eraseStatus(1, 6)"><span id="popup16"></span>
+            <img src="" alt="" id="seat17" onclick="clickStatusSeat(1, 7)" onmouseover="seeStatus(1, 7)" onmouseout="eraseStatus(1, 7)"><span id="popup17"></span>
+            <img src="" alt="" id="seat18" onclick="clickStatusSeat(1, 8)" onmouseover="seeStatus(1, 8)" onmouseout="eraseStatus(1, 8)"><span id="popup18"></span>
+            <img src="" alt="" id="seat19" onclick="clickStatusSeat(1, 9)" onmouseover="seeStatus(1, 9)" onmouseout="eraseStatus(1, 9)"><span id="popup19"></span>
+        </div>
+        <div class="filas">
+            2
+            <img src="" alt="" id="seat21" onclick="clickStatusSeat(2, 1)" onmouseover="seeStatus(2, 1)" onmouseout="eraseStatus(2, 1)"><span id="popup21"></span>
+            <img src="" alt="" id="seat22" onclick="clickStatusSeat(2, 2)" onmouseover="seeStatus(2, 2)" onmouseout="eraseStatus(2, 2)"><span id="popup22"></span>
+            <img src="" alt="" id="seat23" onclick="clickStatusSeat(2, 3)" onmouseover="seeStatus(2, 3)" onmouseout="eraseStatus(2, 3)"><span id="popup23"></span>
+            <img src="" alt="" id="seat24" onclick="clickStatusSeat(2, 4)" onmouseover="seeStatus(2, 4)" onmouseout="eraseStatus(2, 4)"><span id="popup24"></span>
+            <img src="" alt="" id="seat25" onclick="clickStatusSeat(2, 5)" onmouseover="seeStatus(2, 5)" onmouseout="eraseStatus(2, 5)"><span id="popup25"></span>
+            <img src="" alt="" id="seat26" onclick="clickStatusSeat(2, 6)" onmouseover="seeStatus(2, 6)" onmouseout="eraseStatus(2, 6)"><span id="popup26"></span>
+            <img src="" alt="" id="seat27" onclick="clickStatusSeat(2, 7)" onmouseover="seeStatus(2, 7)" onmouseout="eraseStatus(2, 7)"><span id="popup27"></span>
+            <img src="" alt="" id="seat28" onclick="clickStatusSeat(2, 8)" onmouseover="seeStatus(2, 8)" onmouseout="eraseStatus(2, 8)"><span id="popup28"></span>
+            <img src="" alt="" id="seat29" onclick="clickStatusSeat(2, 9)" onmouseover="seeStatus(2, 9)" onmouseout="eraseStatus(2, 9)"><span id="popup29"></span>
+        </div>
+        <div class="filas">
+            3
+            <img src="" alt="" id="seat31" onclick="clickStatusSeat(3, 1)" onmouseover="seeStatus(3, 1)" onmouseout="eraseStatus(3, 1)"><span id="popup31"></span>
+            <img src="" alt="" id="seat32" onclick="clickStatusSeat(3, 2)" onmouseover="seeStatus(3, 2)" onmouseout="eraseStatus(3, 2)"><span id="popup32"></span>
+            <img src="" alt="" id="seat33" onclick="clickStatusSeat(3, 3)" onmouseover="seeStatus(3, 3)" onmouseout="eraseStatus(3, 3)"><span id="popup33"></span>
+            <img src="" alt="" id="seat34" onclick="clickStatusSeat(3, 4)" onmouseover="seeStatus(3, 4)" onmouseout="eraseStatus(3, 4)"><span id="popup34"></span>
+            <img src="" alt="" id="seat35" onclick="clickStatusSeat(3, 5)" onmouseover="seeStatus(3, 5)" onmouseout="eraseStatus(3, 5)"><span id="popup35"></span>
+            <img src="" alt="" id="seat36" onclick="clickStatusSeat(3, 6)" onmouseover="seeStatus(3, 6)" onmouseout="eraseStatus(3, 6)"><span id="popup36"></span>
+            <img src="" alt="" id="seat37" onclick="clickStatusSeat(3, 7)" onmouseover="seeStatus(3, 7)" onmouseout="eraseStatus(3, 7)"><span id="popup37"></span>
+            <img src="" alt="" id="seat38" onclick="clickStatusSeat(3, 8)" onmouseover="seeStatus(3, 8)" onmouseout="eraseStatus(3, 8)"><span id="popup38"></span>
+            <img src="" alt="" id="seat39" onclick="clickStatusSeat(3, 9)" onmouseover="seeStatus(3, 9)" onmouseout="eraseStatus(3, 9)"><span id="popup39"></span>
+        </div>
+        <div class="filas">
+            4
+            <img src="" alt="" id="seat41" onclick="clickStatusSeat(4, 1)" onmouseover="seeStatus(4, 1)" onmouseout="eraseStatus(4, 1)"><span id="popup41"></span>
+            <img src="" alt="" id="seat42" onclick="clickStatusSeat(4, 2)" onmouseover="seeStatus(4, 2)" onmouseout="eraseStatus(4, 2)"><span id="popup42"></span>
+            <img src="" alt="" id="seat43" onclick="clickStatusSeat(4, 3)" onmouseover="seeStatus(4, 3)" onmouseout="eraseStatus(4, 3)"><span id="popup43"></span>
+            <img src="" alt="" id="seat44" onclick="clickStatusSeat(4, 4)" onmouseover="seeStatus(4, 4)" onmouseout="eraseStatus(4, 4)"><span id="popup44"></span>
+            <img src="" alt="" id="seat45" onclick="clickStatusSeat(4, 5)" onmouseover="seeStatus(4, 5)" onmouseout="eraseStatus(4, 5)"><span id="popup45"></span>
+            <img src="" alt="" id="seat46" onclick="clickStatusSeat(4, 6)" onmouseover="seeStatus(4, 6)" onmouseout="eraseStatus(4, 6)"><span id="popup46"></span>
+            <img src="" alt="" id="seat47" onclick="clickStatusSeat(4, 7)" onmouseover="seeStatus(4, 7)" onmouseout="eraseStatus(4, 7)"><span id="popup47"></span>
+            <img src="" alt="" id="seat48" onclick="clickStatusSeat(4, 8)" onmouseover="seeStatus(4, 8)" onmouseout="eraseStatus(4, 8)"><span id="popup48"></span>
+            <img src="" alt="" id="seat49" onclick="clickStatusSeat(4, 9)" onmouseover="seeStatus(4, 9)" onmouseout="eraseStatus(4, 9)"><span id="popup49"></span>
+        </div>
+        <div class="filas">
+            5
+            <img src="" alt="" id="seat51" onclick="clickStatusSeat(5, 1)" onmouseover="seeStatus(5, 1)" onmouseout="eraseStatus(5, 1)"><span id="popup51"></span>
+            <img src="" alt="" id="seat52" onclick="clickStatusSeat(5, 2)" onmouseover="seeStatus(5, 2)" onmouseout="eraseStatus(5, 2)"><span id="popup52"></span>
+            <img src="" alt="" id="seat53" onclick="clickStatusSeat(5, 3)" onmouseover="seeStatus(5, 3)" onmouseout="eraseStatus(5, 3)"><span id="popup53"></span>
+            <img src="" alt="" id="seat54" onclick="clickStatusSeat(5, 4)" onmouseover="seeStatus(5, 4)" onmouseout="eraseStatus(5, 4)"><span id="popup54"></span>
+            <img src="" alt="" id="seat55" onclick="clickStatusSeat(5, 5)" onmouseover="seeStatus(5, 5)" onmouseout="eraseStatus(5, 5)"><span id="popup55"></span>
+            <img src="" alt="" id="seat56" onclick="clickStatusSeat(5, 6)" onmouseover="seeStatus(5, 6)" onmouseout="eraseStatus(5, 6)"><span id="popup56"></span>
+            <img src="" alt="" id="seat57" onclick="clickStatusSeat(5, 7)" onmouseover="seeStatus(5, 7)" onmouseout="eraseStatus(5, 7)"><span id="popup57"></span>
+            <img src="" alt="" id="seat58" onclick="clickStatusSeat(5, 8)" onmouseover="seeStatus(5, 8)" onmouseout="eraseStatus(5, 8)"><span id="popup58"></span>
+            <img src="" alt="" id="seat59" onclick="clickStatusSeat(5, 9)" onmouseover="seeStatus(5, 9)" onmouseout="eraseStatus(5, 9)"><span id="popup59"></span>
+        </div>
+    </div>
+    
+    <div id="alert">
+        <h3 id="display"></h3>
+        <p id="txt"></p>
+        <div id="buttons" style="z-index: 1;">
+            <button id="a1" onclick="choiceThreeSeats('accept')">Accept</button>
+            <button id="c1" onclick="choiceThreeSeats('cancel')">Cancel</button>
+        </div>
+        <div id="buttons" style="z-index: 2; margin-top: -20px;">
+            <button id="a2" onclick="choiceOneSeat('accept')">Accept</button>
+            <button id="c2" onclick="choiceOneSeat('cancel')">Cancel</button>
+        </div>
+        <div>
+            <button id="getout" onclick="getout()">Ok</button>
+        </div>
+    </div>
+
+    <div id="view">
+        <h3 id="your"></h3>
+        <p id="txtend"></p>
+    </div>
+
+    <div id="legend">
+        <div style="background-color: rgb(180, 171, 171); border: thin; height: 20px" ></div>
+        Unavaliable
+        <div style="background-color: red; border: thin; height: 20px" ></div>
+        Avaliable
+        <div style="background-color: green; border: thin; height: 20px" ></div>
+        Selected
+    </div>
+</body>
+</html>
